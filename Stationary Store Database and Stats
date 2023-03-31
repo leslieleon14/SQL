@@ -1,0 +1,23 @@
+
+--Design a store database:
+
+CREATE TABLE stationary (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, aisle INTEGER);
+
+INSERT INTO stationary VALUES (1, "Planners", 10.99, 43, 1);
+INSERT INTO stationary VALUES (2, "Notebooks", 5.99, 57, 2);
+INSERT INTO stationary VALUES (3, "Calendars", 7.99, 38, 3);
+INSERT INTO stationary VALUES (4, "Pens", 2.99, 100, 4);
+INSERT INTO stationary VALUES (5, "Pencils", 1.99, 150, 4);
+INSERT INTO stationary VALUES (6, "Postcards", 4.99, 240, 1);
+INSERT INTO stationary VALUES (7, "Stickers", 2.99, 500, 3);
+INSERT INTO stationary VALUES (8, "Pins", 1.99, 45, 1);
+INSERT INTO stationary VALUES (9, "Gift sets", 10.99, 20, 4);
+INSERT INTO stationary VALUES (10, "Colored Pencils", 6.99, 30, 4);
+INSERT INTO stationary VALUES (11, "Bookmarks", 2.99, 60, 2);
+INSERT INTO stationary VALUES (12, "Post it notes", 3.99, 70, 3);
+INSERT INTO stationary VALUES (13, "Highlighters", 4.99, 80, 3);
+INSERT INTO stationary VALUES (14, "Magnets", 3.99, 40, 4);
+INSERT INTO stationary VALUES (15, "Markers", 2.99, 60, 3);
+
+--Display the database order by price.
+SELECT * FROM stationary GROUP BY price;
